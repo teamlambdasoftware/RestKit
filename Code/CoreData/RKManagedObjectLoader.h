@@ -40,6 +40,8 @@
  */
 @property (nonatomic, retain) RKManagedObjectStore *objectStore;
 
+@property (nonatomic) BOOL shouldDeleteMissingObjects;
+
 + (id)loaderWithURL:(RKURL *)URL mappingProvider:(RKObjectMappingProvider *)mappingProvider objectStore:(RKManagedObjectStore *)objectStore;
 - (id)initWithURL:(RKURL *)URL mappingProvider:(RKObjectMappingProvider *)mappingProvider objectStore:(RKManagedObjectStore *)objectStore;
 
